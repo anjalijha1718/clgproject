@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            width: 100%;
+            background-color:  #00094B;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start; /* Aligns buttons to the left */
+            padding-left: 20px; /* Adds padding to the left */
+            gap: 20px; /* Gap between the buttons */
+        }
+        .top-bar .button {
+            padding: 10px 20px;
+            background-color: rgba(5, 5, 172, 0.973); /* Light blue color */
+            color: rgb(243, 246, 247);
+            border: none;
+            border-radius: 25px; /* Oval shape */
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .top-bar .button:hover {
+            background-color: rgba(5, 5, 172, 0.973);
+        }
+        .white-container {
+            background-color: white;
+            color: black;
+            padding: 120px; /* Increased padding for larger container */
+            display: flex;
+        }
+        .left-container h3 {
+            text-align: center; /* Center the text horizontally */
+        }
+        .left-container {
+            width: 60%; /* 60% width for left container */
+            padding-right: 20px; /* Adds space between containers */
+            display: flex;
+            flex-direction: column; /* Aligns items vertically */
+            justify-content: space-between; /* Aligns items to both ends */
+        }
+        .left-container .button{
+            padding: 10px 20px;
+            background-color: rgba(5, 5, 172, 0.973); /* Light blue color */
+            color: rgb(243, 246, 247);
+            border: none;
+            border-radius: 25px; /* Oval shape */
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+        .left-container .links{
+            display: flex;
+            font-size: 18px;
+            margin-left: 100px;
+            margin-inline: 160px;
+            padding-right: 60px;
+            gap: 30px; /* Adjusted gap for better responsiveness */
+        }
+        .right-container {
+            width: 40%; /* 40% width for right container */
+        }
+        .right-container img {
+            max-width: 100%; /* Ensure image fits container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below image */
+            margin-left: 50px; 
+        }
+        .blue-container {
+            background-color: rgba(5, 5, 172, 0.973); /* Blue color */
+            color: white;
+            padding: 120px; /* Increased padding for larger container */
+            margin-bottom: -20px; /* Remove the space below the blue container */
+        }
+        .white-container a {
+            display: inline-block; /* Display links in the same line */
+            margin-right: 10px; /* Add space between links */
+            margin-bottom: 10px; /* Space between buttons */
+        }
+        .white-container a.upload-btn {
+            background-color: #4CAF50; /* Green background color */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#home" class="button">Home</a>
+        <a href="#about" class="button">About</a>
+    </div>
+    <div class="white-container">
+        <div class="left-container">
+            <h1>Welcome to Our Website</h1>
+            <p>Introducing our revolutionary website builder and deployer, your all-in-one solution for creating stunning websites and launching them effortlessly. With our intuitive drag-and-drop interface, you can design your website exactly the way you envision it, without any coding knowledge required. Choose from a wide range of professionally designed templates and customize them to reflect your brand identity. Our platform offers seamless integration with popular tools and services, allowing you to add features like e-commerce functionality, contact forms, social media integration, and more with just a few clicks. Once your website is ready, our built-in deployment tools make it easy to launch your site to the world with lightning-fast speed and reliability. Say goodbye to the hassle of managing hosting servers and complex deployment processes – our platform takes care of everything for you, so you can focus on what you do best: building your online presence. Experience the power of simplicity with our website builder and deployer – sign up today and start creating your dream website in minutes!</p>
+            <div class="links">
+                <a href="#solutions">Solutions</a>
+                <a href="#product">Product</a>
+                <a href="#resources">Resources</a>
+                <a href="#plans">Plans</a>
+            </div>
+            <h3>Start Now</h3>
+            <a href="#about" class="button">Upload file</a>
+        </div>
+        <div class="right-container">
+            <img src="C:\Users\Anjali jha\Downloads\web image.jpg" alt="Large Image">
+        </div>
+    </div>
+    <div class="blue-container">
+        <h1>About Us</h1>
+        <p>At our website builder and deployer, we're committed to simplifying the online journey. Our platform empowers users of all levels to create and launch stunning websites effortlessly. With intuitive tools and seamless integration, we're here to help you realize your digital vision with ease. Join us and unlock the full potential of your online presence today.</p>
+    </div>
+</body>
+</html>
